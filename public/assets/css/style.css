@@ -1,0 +1,30 @@
+.logo-color {
+    color: #3e9b0c;
+    font-family:'fantasy';
+    font-size: 2em;
+
+}
+.horirul{
+    color: #3e9b0c;
+}
+.logo-ft{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.header{
+    background-image:url(/assets/img/bg.jpg);
+    height: 100vh;
+    background-size:cover;
+    background-position:center ; 
+    background-attachment: fixed;   
+}
+.ul{
+        list-style: none;
+        float: right;
+        display: flex;
+        margin-top: 20px;
+    }
+.bgb{
+    background-image: url(/assets/img/bgd.jpg);
+    background-repeat: no-repeat;
+}
+

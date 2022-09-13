@@ -1,0 +1,43 @@
+CRITICAL - 2022-08-24 06:10:04 --> Undefined array key "rep1Question11"
+in APPPATH\Controllers\Admin\Gerer.php on line 70.
+ 1 APPPATH\Controllers\Admin\Gerer.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rep1Question11"', 'APPPATH\\Controllers\\Admin\\Gerer.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Gerer->ajout()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gerer))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-24 06:10:35 --> Illegal offset type
+in APPPATH\Controllers\Admin\Gerer.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Gerer->ajout()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gerer))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-24 06:11:11 --> Illegal offset type
+in APPPATH\Controllers\Admin\Gerer.php on line 74.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Gerer->ajout()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gerer))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-24 06:11:34 --> Illegal offset type
+in APPPATH\Controllers\Admin\Gerer.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Gerer->ajout()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gerer))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-24 06:12:15 --> Illegal offset type
+in APPPATH\Controllers\Admin\Gerer.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Gerer->ajout()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gerer))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-08-24 06:12:26 --> Illegal offset type
+in APPPATH\Controllers\Admin\Gerer.php on line 72.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Gerer->ajout()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gerer))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

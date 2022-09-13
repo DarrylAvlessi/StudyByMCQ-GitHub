@@ -1,0 +1,196 @@
+ERROR - 2022-09-12 04:33:31 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\Projet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\hp\Desktop\Projet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'qcm', 3306, '', 0)
+#1 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\hp\Desktop\Projet\app\Models\ListModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT id_qcm,d...')
+#4 C:\Users\hp\Desktop\Projet\app\Controllers\Admin\Gerer.php(24): App\Models\ListModel->get_qcm()
+#5 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(904): App\Controllers\Admin\Gerer->index()
+#6 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gerer))
+#7 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\hp\Desktop\Projet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\hp\Desktop\Projet\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\Projet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\hp\Desktop\Projet\app\Models\ListModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT id_qcm,d...')
+#3 C:\Users\hp\Desktop\Projet\app\Controllers\Admin\Gerer.php(24): App\Models\ListModel->get_qcm()
+#4 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(904): App\Controllers\Admin\Gerer->index()
+#5 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gerer))
+#6 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\hp\Desktop\Projet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\hp\Desktop\Projet\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#9 {main}
+CRITICAL - 2022-09-12 04:33:31 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ListModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT id_qcm,designation,domaine_etude.designation_etu AS detu FROM qcm LEFT JOIN domaine_etude ON qcm.id_etude=domaine_etude.id_etude ORDER BY id_qcm')
+ 3 APPPATH\Controllers\Admin\Gerer.php(24): App\Models\ListModel->get_qcm()
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Gerer->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gerer))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 04:34:34 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\Projet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\hp\Desktop\Projet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'qcm', 3306, '', 0)
+#1 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\hp\Desktop\Projet\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\hp\Desktop\Projet\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\hp\Desktop\Projet\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\hp\Desktop\Projet\app\Controllers\Accueil.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(904): App\Controllers\Accueil->index()
+#8 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+#9 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\hp\Desktop\Projet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\hp\Desktop\Projet\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\Projet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\hp\Desktop\Projet\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\hp\Desktop\Projet\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\hp\Desktop\Projet\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\hp\Desktop\Projet\app\Controllers\Accueil.php(15): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(904): App\Controllers\Accueil->index()
+#7 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+#8 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\hp\Desktop\Projet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\hp\Desktop\Projet\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#11 {main}
+CRITICAL - 2022-09-12 04:34:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `domaine_etude`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Accueil.php(15): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Accueil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 04:54:02 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\Projet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\hp\Desktop\Projet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'qcm', 3308, '', 0)
+#1 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\hp\Desktop\Projet\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\hp\Desktop\Projet\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\hp\Desktop\Projet\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\hp\Desktop\Projet\app\Controllers\Accueil.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(904): App\Controllers\Accueil->index()
+#8 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+#9 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\hp\Desktop\Projet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\hp\Desktop\Projet\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\Projet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\hp\Desktop\Projet\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\hp\Desktop\Projet\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\hp\Desktop\Projet\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\hp\Desktop\Projet\app\Controllers\Accueil.php(15): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(904): App\Controllers\Accueil->index()
+#7 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+#8 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\hp\Desktop\Projet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\hp\Desktop\Projet\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#11 {main}
+CRITICAL - 2022-09-12 04:54:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `domaine_etude`', [], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Accueil.php(15): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Accueil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-12 04:54:13 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\Projet\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\hp\Desktop\Projet\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'qcm', 3308, '', 0)
+#1 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\hp\Desktop\Projet\app\Models\ListModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT id_qcm,d...')
+#4 C:\Users\hp\Desktop\Projet\app\Controllers\Admin\Gerer.php(24): App\Models\ListModel->get_qcm()
+#5 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(904): App\Controllers\Admin\Gerer->index()
+#6 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gerer))
+#7 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\hp\Desktop\Projet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\hp\Desktop\Projet\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\Projet\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\hp\Desktop\Projet\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\hp\Desktop\Projet\app\Models\ListModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT id_qcm,d...')
+#3 C:\Users\hp\Desktop\Projet\app\Controllers\Admin\Gerer.php(24): App\Models\ListModel->get_qcm()
+#4 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(904): App\Controllers\Admin\Gerer->index()
+#5 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gerer))
+#6 C:\Users\hp\Desktop\Projet\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\hp\Desktop\Projet\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\hp\Desktop\Projet\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#9 {main}
+CRITICAL - 2022-09-12 04:54:13 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\ListModel.php(11): CodeIgniter\Database\BaseConnection->query('SELECT id_qcm,designation,domaine_etude.designation_etu AS detu FROM qcm LEFT JOIN domaine_etude ON qcm.id_etude=domaine_etude.id_etude ORDER BY id_qcm')
+ 3 APPPATH\Controllers\Admin\Gerer.php(24): App\Models\ListModel->get_qcm()
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Gerer->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gerer))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-12 10:00:04 --> The framework needs the following extension(s) installed and loaded: curl, intl, mbstring.
+in SYSTEMPATH\CodeIgniter.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('curl, intl, mbstring')
+ 2 SYSTEMPATH\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2022-09-12 10:00:04 --> Uncaught Error: Call to undefined function CodeIgniter\CLI\mb_strpos() in C:\Users\hp\Desktop\Projet\system\CLI\CLI.php:776
+Stack trace:
+#0 C:\Users\hp\Desktop\Projet\system\CLI\CLI.php(161): CodeIgniter\CLI\CLI::parseCommandLine()
+#1 C:\Users\hp\Desktop\Projet\system\CLI\CLI.php(1018): CodeIgniter\CLI\CLI::init()
+#2 C:\Users\hp\Desktop\Projet\system\Autoloader\Autoloader.php(282): include_once('C:\\Users\\hp\\Des...')
+#3 C:\Users\hp\Desktop\Projet\system\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\hp\\Des...')
+#4 C:\Users\hp\Desktop\Projet\system\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('CodeIgniter\\CLI...')
+#5 C:\Users\hp\Desktop\Projet\app\Views\errors\cli\error_exception.php(6): CodeIgniter\Autoloader\Autoloader->loadClass('CodeIgniter\\CLI...')
+#6 C:\Users\hp\Desktop\Projet\system\Debug\Exceptions.php(251): include('C:\\Users\\hp\\Des...')
+#7 C:\Users\hp\Desktop\Projet\system\Debug\Exceptions.php(254): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#8 C:\Users\hp\Desktop\Projet\system\Debug\Exceptions.php(138): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\FrameworkException), 500)
+#9 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\FrameworkException))
+#10 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 776.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-12 14:02:04 --> The framework needs the following extension(s) installed and loaded: intl.
+in SYSTEMPATH\CodeIgniter.php on line 219.
+ 1 SYSTEMPATH\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+ 2 SYSTEMPATH\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+ 3 ROOTPATH\spark(83): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2022-09-12 07:59:26 --> Call to undefined method App\Models\DomEtuModel::findAl
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\Admin\Gerer.php(37): CodeIgniter\Model->__call('findAl', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Gerer->ajouterQCM()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gerer))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
