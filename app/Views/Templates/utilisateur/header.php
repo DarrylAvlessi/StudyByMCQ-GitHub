@@ -14,33 +14,33 @@
 <body class="header">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     
-        <header class="bg-light">
-            <div class="ms-5">
-                <h1 class="ms-5 ms-lg-5">
-                    <span class="logo-color">S</span>tudy<span class="logo-color">B</span><span class="logo-ft">y</span><span class="logo-color">M</span><span class="logo-ft">CQ</span>
-                </h1>
-            </div>
-            <nav class="text-bg-dark">
+        <header class="text-bg-dark">
+            <nav class="navbar navbar-dark">
+                <div class="ms-5 nav navbar">
+                    <h1 class="ms-5 ms-lg-5">
+                        <span class="logo-color">S</span>tudy<span class="logo-color">B</span><span class="logo-ft">y</span><span class="logo-color">M</span><span class="logo-ft">CQ</span>
+                    </h1>
+                </div>
                 <div class="container">
-                    <ul class="nav navbar d-flex justify-content-between">
+                    <ul class="nav navbar offset-7">
                         <a href="accueil" class="link-light text-decoration-none">
                             <li>
                                 <button class="btn btn-outline-light border-0">
-                                    <i class="bi-house-door fs-3"></i><span class="fs-3"> Accueil</span> 
+                                    <i class="bi-house-door fs-2"></i><span class="fs-2"> Accueil</span> 
                                 </button>
                             </li>
                         </a>
                         <a href="#" class="link-light text-decoration-none">
                             <li>
                                 <button class="btn btn-outline-light border-0">
-                                    <i class="bi-justify fs-3"></i><span class="fs-3"> Menu</span>
+                                    <i class="bi-justify fs-2"></i><span class="fs-2"> Menu</span>
                                 </button>
                             </li>
                         </a>
                         
                         <li>
                             <button class="btn btn-outline-light border-0" data-bs-toggle="modal" data-bs-target="#admin">
-                                <i class="bi-person-circle fs-3"></i><span class="fs-3"> Admin</span>
+                                <i class="bi-person-circle fs-2"></i><span class="fs-2"> Admin</span>
                             </button>
                         </li>
                         <div class="modal fade" id="admin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

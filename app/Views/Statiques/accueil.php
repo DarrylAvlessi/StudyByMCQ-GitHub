@@ -8,6 +8,7 @@
   </div>
       
 <div class="container-fluid">
+<div class="container text-bg-dark text-center mb-5"><hr><span class="fs-1">Nos QCM</span><hr></div>
 <div class="row">
 <?php
             foreach($qcm as $q){
@@ -28,7 +29,8 @@
         </div>
         <?php }?>
 </div>
-    <div class="row">
+<div class="container text-bg-dark text-center my-5"><hr><span class="fs-1">Nos domaines d'études</span><hr></div>
+    <div class="row mt-5">
         <?php
             foreach($dom_etu as $de){
         ?>
