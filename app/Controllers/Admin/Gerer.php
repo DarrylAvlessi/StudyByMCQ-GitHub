@@ -64,7 +64,7 @@ class Gerer extends BaseController
     
         }else{
             $dataqcm = [
-                'designation' => 'QCM '.$_POST['nom_qcm'],
+                'designation' => trim('QCM '.$_POST['nom_qcm']),
                 'id_etude' => $_POST['reference'],
             ];
     
@@ -75,10 +75,10 @@ class Gerer extends BaseController
             for ($i=1; $i<=$Nmb ; $i++) { 
                 $data_question =
                     [
-                        'question' => $_POST['question'.$i],
-                        'reponse1' => $_POST['rep1Question'.$i],
-                        'reponse2' => $_POST['rep2Question'.$i],
-                        'reponse3' => $_POST['rep3Question'.$i],
+                        'question' => trim($_POST['question'.$i]),
+                        'reponse1' => trim($_POST['rep1Question'.$i]),
+                        'reponse2' => trim($_POST['rep2Question'.$i]),
+                        'reponse3' => trim($_POST['rep3Question'.$i]),
                         'bonne_reponse' => $_POST['bonne_repQuestion'.$i],
                         'id_qcm' => $qcmid
                     ];
@@ -148,10 +148,10 @@ class Gerer extends BaseController
                 $data_question =
                     [
                         'id_question' => $questions[$i-1]["id_question"],
-                        'question' => $_POST['question'.$i],
-                        'reponse1' => $_POST['rep1Question'.$i],
-                        'reponse2' => $_POST['rep2Question'.$i],
-                        'reponse3' => $_POST['rep3Question'.$i],
+                        'question' => trim($_POST['question'.$i]),
+                        'reponse1' => trim($_POST['rep1Question'.$i]),
+                        'reponse2' => trim($_POST['rep2Question'.$i]),
+                        'reponse3' => trim($_POST['rep3Question'.$i]),
                         'bonne_reponse' => $_POST['bonne_repQuestion'.$i],
                     ];
                     $model4=new QuestionModel();
@@ -189,10 +189,10 @@ class Gerer extends BaseController
             .view('templates/admin/footer');
         }else{
             $dataAdmin=[
-            'pseudoAdmin'=>$_POST['pseudoAdmin'],
-            'nom'=>$_POST['nomAdmin'],
-            'prenom'=>$_POST['prenomAdmin'],
-            'motDePasse'=>$_POST['password']
+            'pseudoAdmin'=>trim($_POST['pseudoAdmin']),
+            'nom'=>trim($_POST['nomAdmin']),
+            'prenom'=>trim($_POST['prenomAdmin']),
+            'motDePasse'=>md5(trim($_POST['password']))
         ];
         $model->save($dataAdmin);
         }
