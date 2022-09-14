@@ -10,6 +10,8 @@ use App\Models\QcmModel;
 
 use App\Models\QuestionModel;
 
+use App\Models\AdminModel;
+
 use App\Models\DomEtuModel;
 
 use Config\Services;
@@ -163,5 +165,22 @@ class Gerer extends BaseController
             .view('admin/liste',['qcm'=>$qcm])
             .view('templates/admin/footer');
         }    
+    }
+    public function ajouterAdmin()
+    {
+        $titles=[
+            'title'=>'Nouvel administrateur'
+        ];
+        $dataAdmin=[
+            'pseudoAdmin'=>$_POST['pseudoAdmin'],
+            'nom'=>$_POST['nomAdmin'],
+            'prenom'=>$_POST['prenomAdmin'],
+            'motDePasse'=>$_POST['mdp']
+        ];
+        $model=new AdminModel();
+        $model->save($dataAdmin);
+        return view('templates/admin/header',$titles)
+        .view('admin/ajouterAdmin')
+        .view('templates/admin/footer');
     }
 }

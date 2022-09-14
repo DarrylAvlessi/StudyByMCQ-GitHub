@@ -7,7 +7,13 @@
                 <a href="/admin/gerer/ajouterQCM">
                     <button class="btn btn-success rounded-pill bg-gradient" name="ajout">
                         <i class="bi bi-plus"></i> Ajouter
-                    </button></a><br><br>
+                    </button>
+                </a>
+                <a href="/admin/gerer/ajouterAdmin">
+                    <button class="btn btn-secondary rounded-pill bg-gradient" name="ajout">
+                        <i class="bi bi-plus"></i> Nouvel administrateur
+                    </button>
+                </a>
             </div>
         </div>
             
