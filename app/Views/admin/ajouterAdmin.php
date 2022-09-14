@@ -1,3 +1,10 @@
+<?php 
+    if(isset($validation)):
+?>
+    <div class="text-danger">
+        <?= $validation->listErrors()?>
+    </div>
+<?php endif; ?>
 <div class="card container-fluid border border-secondary bg-success bg-opacity-25 bg-gradient rounded-3 p-2 col-12 mt-5">
     <!-- Card header -->
     <div class="card-header">
@@ -19,8 +26,8 @@
                 <input type="text" name="prenomAdmin" id="prenomAdmin" class="form-control text-bg-dark fs-4">
             </div>
             <div class="mb-3">
-                <label for="mdp" class="col-form-label text-light">Mot de passe : </label>
-                <input type="password" name="mdp" id="mdp" class="form-control text-bg-dark fs-4">
+                <label for="password" class="col-form-label text-light">Mot de passe : </label>
+                <input type="password" name="password" id="password" class="form-control text-bg-dark fs-4">
             </div>
         
     </div>

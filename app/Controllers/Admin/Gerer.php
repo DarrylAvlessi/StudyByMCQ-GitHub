@@ -171,15 +171,33 @@ class Gerer extends BaseController
         $titles=[
             'title'=>'Nouvel administrateur'
         ];
-        $dataAdmin=[
+        $model=new AdminModel();
+        if (strtolower($this->request->getMethod()) !== 'post') {
+            return view('templates/admin/header',$titles)
+            .view('admin/ajouterAdmin', ['validation' => Services::validation()])
+            .view('templates/admin/footer');
+        }
+        $rules=[
+            'pseudoAdmin'=>'required',
+            'nomAdmin'=>'required',
+            'prenomAdmin'=>'required',
+            'password'=>'required'
+        ];
+        if (! $this->validate($rules)) {
+            return view('templates/admin/header',$titles)
+            .view('admin/ajouterAdmin', ['validation' => $this->validator])
+            .view('templates/admin/footer');
+        }else{
+            $dataAdmin=[
             'pseudoAdmin'=>$_POST['pseudoAdmin'],
             'nom'=>$_POST['nomAdmin'],
             'prenom'=>$_POST['prenomAdmin'],
-            'motDePasse'=>$_POST['mdp']
+            'motDePasse'=>$_POST['password']
         ];
-        $model=new AdminModel();
         $model->save($dataAdmin);
+        }
         return view('templates/admin/header',$titles)
+        .view('admin/adminSucces')
         .view('admin/ajouterAdmin')
         .view('templates/admin/footer');
     }
