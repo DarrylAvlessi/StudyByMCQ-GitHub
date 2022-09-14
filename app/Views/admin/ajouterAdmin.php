@@ -34,9 +34,9 @@
     <!-- Card footer -->
     <div class="card-footer">
         <a href="/admin/gerer" class="link-light text-decoration-none">
-            <button type="button" class="btn btn-danger"><i class="bi-arrow-left-circle"></i> Retour</button>
+            <button type="button" class="btn btn-danger btn-lg"><i class="bi-arrow-left-circle"></i> Retour</button>
         </a>
-        <button type="submit" class="btn btn-success">Valider</button>
+        <button type="submit" class="btn btn-success btn-lg"><i class="bi-check-lg"></i> Valider</button>
     </div>
     </form>
 </div>
