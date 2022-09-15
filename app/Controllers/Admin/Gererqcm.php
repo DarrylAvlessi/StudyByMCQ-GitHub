@@ -16,7 +16,7 @@ use App\Models\DomEtuModel;
 
 use Config\Services;
 
-class Gerer extends BaseController
+class Gererqcm extends BaseController
 {
     protected $helpers = ['form'];
     public function index()
@@ -86,7 +86,7 @@ class Gerer extends BaseController
                     $addquestion=$model2->save($data_question);
             }
     
-            return redirect()->to('/admin/gerer/succes');
+            return redirect()->to('/admin/gererqcm/succes');
     
         }
     }
@@ -96,22 +96,22 @@ class Gerer extends BaseController
             'title' => 'Succès'
         ];
         return view('templates/admin/header',$titles)
-        .view('admin/succes')
+        .view('admin/succesqcm')
         .view('templates/admin/footer');
     }
     public function confirmersuppression($id_qcm){
         $titles=[
-            'title' => 'Supprimer'
+            'title' => 'Supprimer QCM'
         ];
         return view('templates/admin/header',$titles)
-        .view('admin/supprimer',['id_qcm'=>$id_qcm])
+        .view('admin/supprimerqcm',['id_qcm'=>$id_qcm])
         .view('templates/admin/footer');
     }
     public function supprimerqcm($id_qcm)
     {
         $model3=new QcmModel();
         $model3->delete($id_qcm);
-        return redirect()->to('/admin/gerer');
+        return redirect()->to('/admin/gererqcm');
     }
     public function modifierQCM($id_qcm)
     {
@@ -166,39 +166,5 @@ class Gerer extends BaseController
             .view('templates/admin/footer');
         }    
     }
-    public function ajouterAdmin()
-    {
-        $titles=[
-            'title'=>'Nouvel administrateur'
-        ];
-        $model=new AdminModel();
-        if (strtolower($this->request->getMethod()) !== 'post') {
-            return view('templates/admin/header',$titles)
-            .view('admin/ajouterAdmin', ['validation' => Services::validation()])
-            .view('templates/admin/footer');
-        }
-        $rules=[
-            'pseudoAdmin'=>'required',
-            'nomAdmin'=>'required',
-            'prenomAdmin'=>'required',
-            'password'=>'required'
-        ];
-        if (! $this->validate($rules)) {
-            return view('templates/admin/header',$titles)
-            .view('admin/ajouterAdmin', ['validation' => $this->validator])
-            .view('templates/admin/footer');
-        }else{
-            $dataAdmin=[
-            'pseudoAdmin'=>trim($_POST['pseudoAdmin']),
-            'nom'=>trim($_POST['nomAdmin']),
-            'prenom'=>trim($_POST['prenomAdmin']),
-            'motDePasse'=>md5(trim($_POST['password']))
-        ];
-        $model->save($dataAdmin);
-        }
-        return view('templates/admin/header',$titles)
-        .view('admin/adminSucces')
-        .view('admin/ajouterAdmin')
-        .view('templates/admin/footer');
-    }
+    
 }

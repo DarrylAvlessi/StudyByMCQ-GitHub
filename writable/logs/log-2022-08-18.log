@@ -156,9 +156,9 @@ in APPPATH\Controllers\Admin\Gerer.php on line 35.
  6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
 CRITICAL - 2022-08-18 08:31:31 --> syntax error, unexpected token "while", expecting "]"
 in APPPATH\Controllers\Admin\Gerer.php on line 35.
- 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/gerer/ajout')
- 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/gerer/ajout')
- 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/gerer/ajout')
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/gererqcm/ajout')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/gererqcm/ajout')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/gererqcm/ajout')
  4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
@@ -196,9 +196,9 @@ in APPPATH\Controllers\Admin\Gerer.php on line 35.
  5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
 CRITICAL - 2022-08-18 08:41:59 --> syntax error, unexpected token ",", expecting "]"
 in APPPATH\Controllers\Admin\Gerer.php on line 35.
- 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/gerer/ajout')
- 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/gerer/ajout')
- 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/gerer/ajout')
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/gererqcm/ajout')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/gererqcm/ajout')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/gererqcm/ajout')
  4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

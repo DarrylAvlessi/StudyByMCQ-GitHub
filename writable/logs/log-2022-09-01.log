@@ -56,18 +56,18 @@ in APPPATH\Controllers\Admin\Gerer.php on line 192.
  6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
 CRITICAL - 2022-09-01 06:49:13 --> syntax error, unexpected variable "$questions"
 in APPPATH\Controllers\Admin\Gerer.php on line 191.
- 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/gerer/modifierQCM/1')
- 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/gerer/modifierQCM/1')
- 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/gerer/modifierQCM/1')
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/gererqcm/modifierQCM/1')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/gererqcm/modifierQCM/1')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/gererqcm/modifierQCM/1')
  4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
 CRITICAL - 2022-09-01 06:52:59 --> syntax error, unexpected token "return"
 in APPPATH\Controllers\Admin\Gerer.php on line 198.
- 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/gerer/modifierQCM/1')
- 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/gerer/modifierQCM/1')
- 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/gerer/modifierQCM/1')
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/gererqcm/modifierQCM/1')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/gererqcm/modifierQCM/1')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/gererqcm/modifierQCM/1')
  4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

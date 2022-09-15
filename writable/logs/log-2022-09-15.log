@@ -1,0 +1,26 @@
+CRITICAL - 2022-09-15 02:27:02 --> Class "App\Controllers\Admin\BaseController" not found
+in APPPATH\Controllers\Admin\Gereradministrateur.php on line 7.
+ 1 SYSTEMPATH\Router\AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/gereradministrateur/ajouterAdmin')
+ 3 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/gereradministrateur/ajouterAdmin')
+ 4 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/gereradministrateur/ajouterAdmin')
+ 5 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-15 02:27:35 --> Class "App\Controllers\Admin\Services" not found
+in APPPATH\Controllers\Admin\Gereradministrateur.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Gereradministrateur->ajouterAdmin()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gereradministrateur))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-15 02:28:04 --> syntax error, unexpected token "use", expecting "," or ";"
+in APPPATH\Controllers\Admin\Gereradministrateur.php on line 9.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/gereradministrateur/ajouterAdmin')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/gereradministrateur/ajouterAdmin')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/gereradministrateur/ajouterAdmin')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

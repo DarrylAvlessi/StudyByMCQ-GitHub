@@ -11,7 +11,7 @@
         <h3 class="fs-1 text-light">Créer un nouveau QCM</h3>
     </div><br>
     <div class="container">
-        <form action="/admin/gerer/ajouterQCM" method="post" class="form">
+        <form action="/admin/gererqcm/ajouterQCM" method="post" class="form">
             <div class="form-group text-center">
                 <div class="row">
                     <div class="col text-start ">
@@ -86,7 +86,7 @@
                 }?>
             <br>
             <div class="text-center">
-                <a href="/admin/gerer" class="text-decoration-none">
+                <a href="/admin/gererqcm" class="text-decoration-none">
                     <button type="button" class="btn btn-danger btn-lg bg-gradient rounded-pill"><i class="bi bi-arrow-return-left"></i> Retour</button>
                 </a>
                 

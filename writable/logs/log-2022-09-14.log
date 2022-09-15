@@ -1,7 +1,8 @@
-CRITICAL - 2022-09-14 05:26:42 --> syntax error, unexpected string content "</div>);"
-in APPPATH\Controllers\Admin\Gerer.php on line 175.
- 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('admin/gerer/ajouterAdmin')
- 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('admin/gerer/ajouterAdmin')
+CRITICAL - 2022-09-14 05:26:42 --> syntax error, unexpected string content "</div>);
+"
+in APPPATH\Controllers\Admin\Gerer.php on line 175.admin/gererqcm/
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoutadmin/gererqcm/er/ajouterAdmin')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoadmin/gererqcm/erer/ajouterAdmin')
  3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('admin/gerer/ajouterAdmin')
  4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
  5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)

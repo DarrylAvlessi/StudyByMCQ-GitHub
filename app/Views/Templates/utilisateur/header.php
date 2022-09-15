@@ -15,6 +15,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     
         <header class="text-bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="navbar-brand ms-5">
+                    <h1 class="ms-5 ms-lg-5">
+                        <span class="logo-color">S</span>tudy<span class="logo-color">B</span><span class="logo-ft">y</span><span class="logo-color">M</span><span class="logo-ft">CQ</span>
+                    </h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#">
+                        <span class="fs-2"> Accueil</span> 
+                    </a>
+                    <a class="nav-link" href="#">
+                        <span class="fs-2"> Admin</span>
+                    </a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </div>
+                </div>
+            </div>
+        </nav>
             <nav class="navbar navbar-dark">
                 <div class="ms-5 nav navbar">
                     <h1 class="ms-5 ms-lg-5">
@@ -43,37 +67,6 @@
                                 <i class="bi-person-circle fs-2"></i><span class="fs-2"> Admin</span>
                             </button>
                         </li>
-                        <div class="modal fade" id="admin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <!-- Modal header -->
-                                    <div class="modal-header">
-                                        <h5 class="modal-title text-dark" id="exampleModalLabel">Accéder à l'espace administrateur</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="mb-3">
-                                                <label for="recipient-name" class="col-form-label text-dark">Identifiant : </label>
-                                                <input type="text" class="form-control" id="recipient-name" name="idAdmin">
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="mdp" class="col-form-label text-dark">Mot de passe : </label>
-                                                <input type="text" class="form-control" id="mdp" name="mdp">
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="bi-x-lg"></i> Fermer</button>
-                                        <a href="admin/gerer" class="link-light text-decoration-none">
-                                            <button type="button" class="btn btn-primary">Soumettre</button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </ul>
                 </div>
             </nav>

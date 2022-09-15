@@ -11,7 +11,7 @@
         <h3 class="fs-1 text-light">Modifier les questions</h3>
     </div><br>
     <div class="container">
-        <form action="/admin/gerer/modifierQCM/<?=$id_qcm?>" method="post" class="form">
+        <form action="/admin/gererqcm/modifierQCM/<?=$id_qcm?>" method="post" class="form">
             <?php
                 $i=1;
                 while ($i<=10){?>
@@ -54,7 +54,7 @@
                 }?>
             <br>
             <div class="text-center">
-                <a href="/admin/gerer" class="text-decoration-none">
+                <a href="/admin/gererqcm" class="text-decoration-none">
                     <button type="button" class="btn btn-danger bg-gradient px-5 rounded-pill"><i class="bi bi-arrow-return-left"></i> Retour</button>
                 </a>
                 
