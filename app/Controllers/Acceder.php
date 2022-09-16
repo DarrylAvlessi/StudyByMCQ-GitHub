@@ -29,7 +29,9 @@ class Acceder extends BaseController
 
         if($dataAdmin)
         {
-            return redirect()->to('/admin/gererqcm');
+            session_start();
+            $_SESSION['id']=$dataAdmin[0]['idAdmin']; 
+            return redirect()->to('/admin/gereradministrateur');
         }
         return view('templates/utilisateur/header',$titles)
         .view('admin/invalide')

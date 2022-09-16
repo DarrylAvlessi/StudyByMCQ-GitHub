@@ -4,14 +4,19 @@
         <h1 class="text-light">Liste des Administrateurs</h1>
     </div>
     <div class="col text-end">
-        <a href="/admin/gereradministrateur/ajouterAdmin">
+        <a href="/admin/gereradministrateur/ajouterAdmin" class="text-decoration-none">
             <button class="btn btn-success rounded-pill bg-gradient" name="ajout">
                 <i class="bi bi-plus"></i> Ajouter
             </button>
         </a>
-        <a href="/admin/gererqcm">
+        <a href="/admin/gererqcm" class="text-decoration-none">
             <button class="btn btn-secondary rounded-pill bg-gradient" name="ajout">
                 <i class="bi bi-gear"></i> Gerer les QCM
+            </button>
+        </a>
+        <a href="/logout" class="text-decoration-none">
+            <button class="btn btn-danger rounded-pill bg-gradient" name="logout">
+                <i class="bi bi-box-arrow-left"></i> Déconnecter
             </button>
         </a>
     </div>

@@ -12,6 +12,13 @@ class Gereradministrateur extends BaseController
 {
     public function index()
     {
+        session_start();
+        if(!array_key_exists('id',$_SESSION))
+        {
+            return redirect()->to('/acceder');
+        }
+        //session_destroy();
+        var_dump($_SESSION);
         $titles=[
             'title'=>'Liste des administrateurs'
         ];

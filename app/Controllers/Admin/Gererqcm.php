@@ -21,6 +21,12 @@ class Gererqcm extends BaseController
     protected $helpers = ['form'];
     public function index()
     {
+        session_start();
+        if(!array_key_exists('id',$_SESSION))
+        {
+            return redirect()->to('/acceder');
+        }
+        //session_destroy();
         $titles=[
             'title' => 'Liste des QCM'
         ];
