@@ -24,3 +24,13 @@ in APPPATH\Controllers\Admin\Gereradministrateur.php on line 9.
  5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-15 11:43:27 --> Invalid file: templates/utlisateur/footer.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/utlisateur/footer.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('templates/utlisateur/footer', [], true)
+ 3 APPPATH\Controllers\Acceder.php(18): view('templates/utlisateur/footer')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Acceder->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Acceder))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

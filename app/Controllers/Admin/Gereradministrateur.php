@@ -36,7 +36,7 @@ class Gereradministrateur extends BaseController
             'pseudoAdmin'=>'required',
             'nomAdmin'=>'required',
             'prenomAdmin'=>'required',
-            'password'=>'required'
+            'password'=>'required|min_length[8]|max_length[32]'
         ];
         if (! $this->validate($rules)) {
             return view('templates/admin/header',$titles)
