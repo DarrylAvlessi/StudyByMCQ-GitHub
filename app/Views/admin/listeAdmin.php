@@ -33,6 +33,11 @@
                         <td><?php echo $adm['nom'] ?></td>
                         <td><?php echo $adm['prenom'] ?></td>
                         <td class="text-end text-center">
+                            <a href="<?php echo base_url().'/admin/gereradministrateur/modifierAdmin/'.$adm['idAdmin']?>" class="text-decoration-none">
+                                <button class="btn btn-primary rounded-pill bg-gradient col-3">
+                                    <i class="bi bi-pencil"></i> Modifier
+                                </button><?php echo '  ';?>
+                            </a>
                             <a href="<?php echo base_url().'/admin/gereradministrateur/confirmersuppression/'.$adm['idAdmin']?>">
                                 <button class="btn btn-danger rounded-pill bg-gradient">
                                     <i class="bi bi-trash"></i> Supprimer

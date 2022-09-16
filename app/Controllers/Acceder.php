@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use Config\Services;
 
+use App\Models\AdminModel;
+
 class Acceder extends BaseController
 {
     public function index()
@@ -14,25 +16,24 @@ class Acceder extends BaseController
         if(strtolower($this->request->getMethod())!=='post')
         {
             return view('templates/utilisateur/header',$titles)
-            .view('statiques/accederAdmin',['validation'=>Services::validation()])
+            .view('statiques/espaceAdmin',['validation'=>Services::validation()])
             .view('templates/utilisateur/footer');
         }
 
         $model=new AdminModel();
         $dataAdmin=[
             'pseudoAdmin'=>$_POST['pseudoAdmin'],
-            'motDePasse'=>$_POST['password']
+            'motDePasse'=>md5(trim($_POST['password']))
         ];
-        $dataAdmin=$model->where(['pseudoAdmin'=>$dataAdmin['pseudoAdmin'],'motDePasse'=>$dataAdmin['pseudoAdmin']])->findAll();
+        $dataAdmin=$model->where(['pseudoAdmin'=>$dataAdmin['pseudoAdmin'],'motDePasse'=>$dataAdmin['motDePasse']])->findAll();
 
         if($dataAdmin)
         {
-            return redirect()->to('accueil');
+            return redirect()->to('/admin/gererqcm');
         }
-
-        $rules=[
-            'pseudoAdmin'=>'required',
-            'password'=>'required'
-        ];
+        return view('templates/utilisateur/header',$titles)
+        .view('admin/invalide')
+        .view('statiques/espaceAdmin')
+        .view('templates/utilisateur/footer');
     }
 }

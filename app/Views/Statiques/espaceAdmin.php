@@ -5,22 +5,21 @@
         <?= $validation->listErrors()?>
     </div>
 <?php endif; ?>
-<div class="h-25"></div>
-<div class="card container border border-secondary bg-success bg-opacity-25 bg-gradient rounded-3 p-2 col-12 mt-5">
+<div class="card container col-lg-5 col-md-6 col-sm-6 col-xs-6 border border-secondary bg-success bg-opacity-25 bg-gradient rounded-3 p-2 mt-5">
     <!-- Card header -->
     <div class="card-header">
-        <h5 class="card-title text-light">Ajouter un administrateur</h5>
+        <h5 class="card-title text-light">Accéder à l'espace administrateur</h5>
     </div>
     <!-- Card body -->
     <div class="card-body">
         <form action="/acceder" method="post">
             <div class="mb-3">
                 <label for="pseudoAdmin" class="col-form-label text-light">Pseudo : </label>
-                <input type="text" name="pseudoAdmin" id="pseudoAdmin" class="form-control text-bg-dark fs-4">
+                <input type="text" name="pseudoAdmin" id="pseudoAdmin" class="form-control text-bg-dark fs-4" title="Entrer votre pseudo">
             </div>
             <div class="mb-3">
                 <label for="password" class="col-form-label text-light">Mot de passe : </label>
-                <input type="password" name="password" id="password" class="form-control text-bg-dark fs-4">
+                <input type="password" name="password" id="password" class="form-control text-bg-dark fs-4" title="Entrer votre mot de passe">
             </div>
         
     </div>

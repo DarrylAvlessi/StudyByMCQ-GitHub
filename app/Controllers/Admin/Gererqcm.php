@@ -26,7 +26,7 @@ class Gererqcm extends BaseController
         ];
         $model=new ListModel();
         $qcm=$model->get_qcm();
-        echo view('templates/admin/header',$titles)
+        return view('templates/admin/header',$titles)
         .view('admin/liste',['qcm'=>$qcm])
         .view('templates/admin/footer');
     }
@@ -155,7 +155,7 @@ class Gererqcm extends BaseController
                         'bonne_reponse' => $_POST['bonne_repQuestion'.$i],
                     ];
                     $model4=new QuestionModel();
-                    $editquestion1=$model4->save($data_question);
+                    $editquestion.$i=$model4->save($data_question);
             }    
           
             $model=new ListModel();

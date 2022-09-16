@@ -19,7 +19,7 @@
                       
 
                     <div class="card-body">
-                          <h5 class="btn btn-secondary text-light fw-bolder fs-5"><?=$q['designation']?></h5>
+                          <h5 class="badge bg-secondary text-light fw-bolder fs-4"><?=$q['designation']?></h5>
                         <p class="logo-ft fw-bold fs-4"><?=$q['designation']?> avec des réponses pour consolider vos connaissances, réviser pour un test, un entretien d'embauche, préparer un examen...</p>
                         <div class="text-end">
                         <a href="acceder" class="btn btn-success btn-lg" role="button" type = "button" data-bs-toggle="tooltip" data-bs-placement="top" title="Cliquer pour acceder"><i class="bi bi-arrow-right"></i> Accéder</a>
