@@ -22,10 +22,10 @@
                           <h5 class="badge bg-secondary text-light fw-bolder fs-4"><?=$q['designation']?></h5>
                         <p class="logo-ft fw-bold fs-4"><?=$q['designation']?> avec des réponses pour consolider vos connaissances, réviser pour un test, un entretien d'embauche, préparer un examen...</p>
                         <div class="text-end">
-                        <a href="acceder" class="btn btn-success btn-lg" role="button" type = "button" data-bs-toggle="tooltip" data-bs-placement="top" title="Cliquer pour acceder"><i class="bi bi-arrow-right"></i> Accéder</a>
+                        <a href="/qcm/index/<?=$q['id_qcm']?>" class="btn btn-success btn-lg" role="button" type = "button" data-bs-toggle="tooltip" data-bs-placement="top" title="Cliquer pour acceder"><i class="bi bi-arrow-right"></i> Accéder</a>
                         </div>
                     </div>
-                </div>
+                </div>	
         </div>
         <?php }?>
 </div>
@@ -40,10 +40,17 @@
                       
 
                     <div class="card-body">
-                          <h5 class="logo-ft fw-bolder fs-3"><?=$de['designation_etu']?></h5>
-                        <p class="logo-ft fw-bold">Retrouvez ici votre liste de QCM <br> dans différents branches en <em><?=$de['designation_etu']?></em></p>
+                        <h5 class="logo-ft fw-bolder fs-3">
+							<?=$de['designation_etu']?>
+						</h5>
+                        <p class="logo-ft fw-bold">
+							Retrouvez ici votre liste de QCM <br> dans différents branches en <em><?=$de['designation_etu']?></em>
+						</p>
                         <div class="text-end">
-                        <a href="acceder" class="btn btn-success btn-lg" role="button" type = "button" data-bs-toggle="tooltip" data-bs-placement="top" title="Cliquer pour acceder"><i class="bi bi-arrow-right"></i> Accéder</a>
+                        	<a href="" class="btn btn-success btn-lg" role="button" type = "button" data-bs-toggle="tooltip" data-bs-placement="top" title="Cliquer pour acceder">
+								<i class="bi bi-arrow-right"></i>
+								 Accéder
+							</a>
                         </div>
                     </div>
                 </div>

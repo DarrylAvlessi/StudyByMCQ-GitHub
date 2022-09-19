@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Models\DomEtuModel;
 
-use App\Models\ListModel;
+use App\Models\QcmModel;
 
 class Accueil extends BaseController
 {
@@ -15,8 +15,8 @@ class Accueil extends BaseController
         ];
         $model=new DomEtuModel;
         $dom_etu=$model->findAll();
-        $model1=new ListModel;
-        $qcm=$model1->get_qcm();
+        $model1=new QcmModel;
+        $qcm=$model1->findAll();
         return view('templates/utilisateur/header',$titles)
         .view('statiques/accueil',['dom_etu' => $dom_etu,'qcm' => $qcm])
         .view('templates/utilisateur/footer');

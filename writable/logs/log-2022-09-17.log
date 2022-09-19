@@ -1,0 +1,24 @@
+CRITICAL - 2022-09-17 05:13:42 --> Undefined variable $title
+in APPPATH\Views\Templates\utilisateur\header.php on line 7.
+ 1 APPPATH\Views\Templates\utilisateur\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\Templates\\utilisateur\\header.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Templates\\utilisateur\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('templates/utilisateur/header', [], true)
+ 5 APPPATH\Controllers\Acceder.php(11): view('templates/utilisateur/header')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Acceder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Acceder))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-17 05:14:45 --> Undefined variable $title
+in APPPATH\Views\Templates\utilisateur\header.php on line 7.
+ 1 APPPATH\Views\Templates\utilisateur\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\Templates\\utilisateur\\header.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Templates\\utilisateur\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('templates/utilisateur/header', [], true)
+ 5 APPPATH\Controllers\Acceder.php(15): view('templates/utilisateur/header')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Acceder->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Acceder))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

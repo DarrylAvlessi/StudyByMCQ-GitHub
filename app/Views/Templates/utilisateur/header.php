@@ -31,7 +31,7 @@
                                         <i class="bi-house-door fs-2"></i><span class="fs-2"> Accueil</span>
                                     </button>
                                 </a>
-                                <a class="nav-link" href="/admin/gereradministrateur">
+                                <a class="nav-link" href="/admin/gererqcm">
                                     <button class="btn btn-outline-light border-0" title="Accéder à l'espace administrateur">
                                         <i class="bi-person-circle fs-2"></i><span class="fs-2"> Admin</span>
                                     </button>

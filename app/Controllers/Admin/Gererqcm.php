@@ -26,12 +26,14 @@ class Gererqcm extends BaseController
         {
             return redirect()->to('/acceder');
         }
-        //session_destroy();
         $titles=[
             'title' => 'Liste des QCM'
         ];
-        $model=new ListModel();
-        $qcm=$model->get_qcm();
+        $model=new QcmModel();
+        $qcm=$model->select('id_qcm,designation,domaine_etude.designation_etu AS detu')
+                   ->join('domaine_etude','qcm.id_etude=domaine_etude.id_etude','left')
+                   ->orderBy('id_qcm','asc')
+                   ->findAll();
         return view('templates/admin/header',$titles)
         .view('admin/liste',['qcm'=>$qcm])
         .view('templates/admin/footer');

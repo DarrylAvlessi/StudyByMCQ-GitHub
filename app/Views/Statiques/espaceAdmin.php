@@ -12,7 +12,7 @@
     </div>
     <!-- Card body -->
     <div class="card-body">
-        <form action="/acceder" method="post">
+        <form action="/espaceadmin" method="post">
             <div class="mb-3">
                 <label for="pseudoAdmin" class="col-form-label text-light">Pseudo : </label>
                 <input type="text" name="pseudoAdmin" id="pseudoAdmin" class="form-control text-bg-dark fs-4" title="Entrer votre pseudo">

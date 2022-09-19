@@ -6,7 +6,7 @@ use Config\Services;
 
 use App\Models\AdminModel;
 
-class Acceder extends BaseController
+class Espaceadmin extends BaseController
 {
     public function index()
     {
