@@ -1,0 +1,1 @@
+<div class="text-bg-dark my-5 display-2 text-center"><p>Vous avez obtenu <?=$score?> points</p></div>

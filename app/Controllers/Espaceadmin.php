@@ -31,7 +31,7 @@ class Espaceadmin extends BaseController
         {
             session_start();
             $_SESSION['id']=$dataAdmin[0]['idAdmin']; 
-            return redirect()->to('/admin/gereradministrateur');
+            return redirect()->to('/admin/gererqcm');
         }
         return view('templates/utilisateur/header',$titles)
         .view('admin/invalide')

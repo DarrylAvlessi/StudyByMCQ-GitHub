@@ -5,3 +5,240 @@ in APPPATH\Controllers\Qcm.php on line 9.
  3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-19 05:47:09 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'qcm', 3306, '', 0)
+#1 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\hp\Desktop\StudyByMCQ-GitHub\app\Controllers\Qcm.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(904): App\Controllers\Qcm->index('1')
+#8 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+#9 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\hp\Desktop\StudyByMCQ-GitHub\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\hp\Desktop\StudyByMCQ-GitHub\app\Controllers\Qcm.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(904): App\Controllers\Qcm->index('1')
+#7 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+#8 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\hp\Desktop\StudyByMCQ-GitHub\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#11 {main}
+CRITICAL - 2022-09-19 05:47:09 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `question`
+WHERE `id_qcm` = :id_qcm:', [...], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Qcm.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Qcm->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-19 05:47:18 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'qcm', 3306, '', 0)
+#1 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\hp\Desktop\StudyByMCQ-GitHub\app\Controllers\Qcm.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(904): App\Controllers\Qcm->index('1')
+#8 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+#9 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\hp\Desktop\StudyByMCQ-GitHub\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\hp\Desktop\StudyByMCQ-GitHub\app\Controllers\Qcm.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(904): App\Controllers\Qcm->index('1')
+#7 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+#8 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\hp\Desktop\StudyByMCQ-GitHub\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#11 {main}
+CRITICAL - 2022-09-19 05:47:18 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `question`
+WHERE `id_qcm` = :id_qcm:', [...], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Qcm.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Qcm->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-19 05:47:26 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'qcm', 3306, '', 0)
+#1 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\hp\Desktop\StudyByMCQ-GitHub\app\Controllers\Qcm.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(904): App\Controllers\Qcm->index('1')
+#8 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+#9 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\hp\Desktop\StudyByMCQ-GitHub\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\hp\Desktop\StudyByMCQ-GitHub\app\Controllers\Qcm.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(904): App\Controllers\Qcm->index('1')
+#7 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+#8 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\hp\Desktop\StudyByMCQ-GitHub\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\hp\\Des...')
+#11 {main}
+CRITICAL - 2022-09-19 05:47:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `question`
+WHERE `id_qcm` = :id_qcm:', [...], false)
+ 3 SYSTEMPATH\Model.php(222): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Qcm.php(16): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Qcm->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 06:08:42 --> Too few arguments to function App\Controllers\Admin\Gereradministrateur::modifierAdmin(), 0 passed in C:\Users\hp\Desktop\StudyByMCQ-GitHub\system\CodeIgniter.php on line 904 and exactly 1 expected
+in APPPATH\Controllers\Admin\Gereradministrateur.php on line 88.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Admin\Gereradministrateur->modifierAdmin()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Gereradministrateur))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 06:57:22 --> syntax error, unexpected token ")"
+in APPPATH\Controllers\Qcm.php on line 24.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('qcm/index/1')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('qcm/index/1')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('qcm/index/1')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 06:57:23 --> syntax error, unexpected token ")"
+in APPPATH\Controllers\Qcm.php on line 24.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('qcm/index/1')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('qcm/index/1')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('qcm/index/1')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 06:57:38 --> New expressions are not supported in this context
+in APPPATH\Controllers\Qcm.php on line 9.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-19 07:05:10 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Qcm.php on line 25.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('qcm/index/1')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('qcm/index/1')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('qcm/index/1')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 07:05:12 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Qcm.php on line 25.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('qcm/index/1')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('qcm/index/1')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('qcm/index/1')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 07:30:40 --> Undefined variable $q
+in APPPATH\Views\Statiques\questions.php on line 1.
+ 1 APPPATH\Views\Statiques\questions.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $q', 'APPPATH\\Views\\Statiques\\questions.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Statiques\\questions.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('statiques/questions', [], true)
+ 5 APPPATH\Controllers\Qcm.php(18): view('statiques/questions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Qcm->index('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 07:31:49 --> Undefined array key 0
+in APPPATH\Views\Statiques\questions.php on line 14.
+ 1 APPPATH\Views\Statiques\questions.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\Statiques\\questions.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Statiques\\questions.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('statiques/questions', [], true)
+ 5 APPPATH\Controllers\Qcm.php(18): view('statiques/questions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Qcm->index('.*')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 07:33:58 --> Undefined array key 0
+in APPPATH\Views\Statiques\questions.php on line 1.
+ 1 APPPATH\Views\Statiques\questions.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\Statiques\\questions.php', 1)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Statiques\\questions.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('statiques/questions', [], true)
+ 5 APPPATH\Controllers\Qcm.php(18): view('statiques/questions', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Qcm->index('.*')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 07:41:31 --> Undefined variable $title
+in APPPATH\Views\Templates\utilisateur\header.php on line 7.
+ 1 APPPATH\Views\Templates\utilisateur\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'APPPATH\\Views\\Templates\\utilisateur\\header.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Templates\\utilisateur\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('templates/utilisateur/header', [], true)
+ 5 APPPATH\Controllers\Qcm.php(36): view('templates/utilisateur/header')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Qcm->score()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-19 07:41:42 --> view(): Argument #2 ($data) must be of type array, int given, called in C:\Users\hp\Desktop\StudyByMCQ-GitHub\app\Controllers\Qcm.php on line 37
+in SYSTEMPATH\Common.php on line 1123.
+ 1 APPPATH\Controllers\Qcm.php(37): view('statiques/score', 4)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Qcm->score()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Qcm))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
