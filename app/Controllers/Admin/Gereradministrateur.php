@@ -17,7 +17,6 @@ class Gereradministrateur extends BaseController
         {
             return redirect()->to('/espaceadmin');
         }
-        var_dump($_SESSION);
         $titles=[
             'title'=>'Liste des administrateurs'
         ];

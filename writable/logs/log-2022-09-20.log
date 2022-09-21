@@ -1,0 +1,12 @@
+CRITICAL - 2022-09-20 16:41:23 --> Undefined variable $score
+in APPPATH\Views\Statiques\accueil.php on line 2.
+ 1 APPPATH\Views\Statiques\accueil.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $score', 'APPPATH\\Views\\Statiques\\accueil.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 5 APPPATH\Controllers\Accueil.php(21): view('statiques/accueil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Accueil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Accueil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
