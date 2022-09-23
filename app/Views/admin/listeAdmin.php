@@ -1,7 +1,7 @@
 <br><br><br>
 <div class="row">
     <div class="col">
-        <h1 class="text-light">Liste des Administrateurs</h1>
+        <h1 class="text-light">Liste des Experts</h1>
     </div>
     <div class="col text-end">
         <a href="/admin/gereradministrateur/ajouterAdmin" class="text-decoration-none">

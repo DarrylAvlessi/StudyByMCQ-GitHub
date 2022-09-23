@@ -33,7 +33,7 @@
                                 <select class="form-select text-bg-dark fs-4" name="reference" >
                                     <option value="">Selectionner un domaine d'étude</option>
                                 <?php foreach($etu as $etu) {?>
-                                    <option value="<?php echo $etu['id_etude'] ?>">
+                                    <option value="<?php echo $etu['id_etude'] ?>" class="text-bg-success">
                                         <?php echo $etu['designation_etu'] ?>
                                     </option>
                                     <?php }?>

@@ -8,11 +8,11 @@
 <div class="card container col-lg-5 col-md-6 col-sm-6 col-xs-6 border border-secondary bg-success bg-opacity-25 bg-gradient rounded-3 p-2 mt-5">
     <!-- Card header -->
     <div class="card-header">
-        <h5 class="card-title text-light">Accéder à l'espace administrateur</h5>
+        <h5 class="card-title text-light">Se connecter</h5>
     </div>
     <!-- Card body -->
     <div class="card-body">
-        <form action="/connexion/expert" method="post">
+        <form action="/espaceadmin" method="post">
             <div class="mb-3">
                 <label for="pseudoAdmin" class="col-form-label text-light">Pseudo : </label>
                 <input type="text" name="pseudoAdmin" id="pseudoAdmin" class="form-control text-bg-dark fs-4" title="Entrer votre pseudo">
@@ -30,7 +30,7 @@
                 <button type="button" class="btn btn-danger btn-lg"><i class="bi-arrow-left-circle"></i> Retour</button>
             </a>
             <button type="submit" class="btn btn-success btn-lg"><i class="bi-check-lg"></i> Valider</button>
-            <a href="/connexion/nouvelExpert" class="link-light text-decoration-none">
+            <a href="/connexion/nouvelutilisateur" class="link-light text-decoration-none">
                 <button type="button" class="btn btn-dark btn-lg"><i class="bi-person-plus"></i> S'inscrire</button>
             </a>
         </div>

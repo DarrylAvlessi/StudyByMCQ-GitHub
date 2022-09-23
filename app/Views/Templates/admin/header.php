@@ -17,7 +17,7 @@
         <div class="text-center">
         <a href="/accueil" class="link-light text-decoration-none">
             <button class="btn btn-outline-light border-0">
-                <i class="bi-lock-fill fs-3"></i><span class="fs-3"> Admin</span>
+                <i class="bi-arrow-left fs-3"></i><span class="fs-3"> Retour à l'accueil</span>
             </button>
         </a>
             <h1>

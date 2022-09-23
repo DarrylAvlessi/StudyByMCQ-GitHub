@@ -24,7 +24,7 @@ class Gererqcm extends BaseController
         session_start();
         if(!array_key_exists('id',$_SESSION))
         {
-            return redirect()->to('/espaceadmin');
+            return redirect()->to('/connexion');
         }
         $titles=[
             'title' => 'Liste des QCM'

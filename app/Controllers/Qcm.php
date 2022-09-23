@@ -4,6 +4,8 @@ namespace App\Controllers;
 
 use App\Models\QuestionModel;
 
+use App\Models\NoteCommentaireModel;
+
 class Qcm extends BaseController
 {
     public function index($idqcm)
@@ -36,6 +38,16 @@ class Qcm extends BaseController
         return view('templates/utilisateur/header',$titles)
         .view('statiques/score',['score'=>$score])
         .view('templates/utilisateur/footer');
+    }
+    public function commentaire()
+    {
+        $comment=[
+            'commentaire'=>$_POST['comment'],
+            'note'=>$_POST['rating']
+        ];
+        $model=new NoteCommentaireModel();
+        $model->save($comment);
+        return redirect()->to('/accueil');
     }
 }
 ?>

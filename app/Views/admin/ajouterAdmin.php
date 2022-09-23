@@ -8,7 +8,7 @@
 <div class="card container-fluid border border-secondary bg-success bg-opacity-25 bg-gradient rounded-3 p-2 col-12 mt-5">
     <!-- Card header -->
     <div class="card-header">
-        <h5 class="card-title text-light">Ajouter un administrateur</h5>
+        <h5 class="card-title text-light">Nouvel expert</h5>
     </div>
     <!-- Card body -->
     <div class="card-body">

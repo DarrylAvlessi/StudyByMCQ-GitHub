@@ -11,7 +11,7 @@
                 </a>
                 <a href="/admin/gereradministrateur" class="text-decoration-none">
                     <button class="btn btn-secondary rounded-pill bg-gradient" name="gerer">
-                        <i class="bi bi-gear"></i> Gerer les administrateurs
+                        <i class="bi bi-gear"></i> Gerer les experts
                     </button>
                 </a>
                 <a href="/logout" class="text-decoration-none">

@@ -15,7 +15,7 @@ class Gereradministrateur extends BaseController
         session_start();
         if(!array_key_exists('id',$_SESSION))
         {
-            return redirect()->to('/espaceadmin');
+            return redirect()->to('/connexion/expert');
         }
         $titles=[
             'title'=>'Liste des administrateurs'

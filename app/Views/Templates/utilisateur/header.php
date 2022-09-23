@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <body class="header">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
@@ -31,9 +32,9 @@
                                         <i class="bi-house-door fs-2"></i><span class="fs-2"> Accueil</span>
                                     </button>
                                 </a>
-                                <a class="nav-link" href="/admin/gererqcm">
-                                    <button class="btn btn-outline-light border-0" title="Accéder à l'espace administrateur">
-                                        <i class="bi-person-circle fs-2"></i><span class="fs-2"> Admin</span>
+                                <a class="nav-link" href="/connexion/choixConnexion">
+                                    <button class="btn btn-outline-light border-0" title="Connexion">
+                                        <i class="bi-person-circle fs-2"></i><span class="fs-2"> Connexion</span>
                                     </button>
                                 </a>
                             </div>
